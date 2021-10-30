@@ -131,6 +131,14 @@
             [gameTiles[6], gameTiles[7], gameTiles[8]],
         ];
 
+        var helper = {
+            shuffle: (box, columns) => {
+                for (var i = columns.length; i >= 0; i--) {
+                    box.appendChild(columns[Math.random() * i | 0]);
+                }
+            }
+        }
+
         function render(gameBoard, gameState) {
             var columns = [];
             gameState.forEach((row, rowIndex) => {
@@ -196,14 +204,6 @@
                 gameState[emptyX][emptyY] = temp;
             }
         });
-
-        var helper = {
-            shuffle: (box, columns) => {
-                for (var i = columns.length; i >= 0; i--) {
-                    box.appendChild(columns[Math.random() * i | 0]);
-                }
-            }
-        }
     </script>
 </body>
 
