@@ -34,7 +34,6 @@
 </head>
 
 <body>
-    <h1>J2Team</h1>
     <div class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
         <div class="relative py-3 sm:max-w-xl sm:mx-auto">
             <div
@@ -126,9 +125,9 @@
         const gameBoard = document.querySelector("#game-board");
 
         const gameState = [
-            [gameTiles[0], gameTiles[1], gameTiles[2]],
+            [gameTiles[8], gameTiles[1], gameTiles[2]],
             [gameTiles[3], gameTiles[4], gameTiles[5]],
-            [gameTiles[6], gameTiles[7], gameTiles[8]],
+            [gameTiles[6], gameTiles[7], gameTiles[0]],
         ];
 
         function render(gameBoard, gameState) {
